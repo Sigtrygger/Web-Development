@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS-Lab Task</title>
+        <script type="text/javascript">
+            // Prompting the user for inputs using window.prompt()
+            var firstName = window.prompt("Enter your first name", "");
+            var msgColor = window.prompt("Enter the colour of the message", "blue");
+            var msgSize = window.prompt("Enter the font size of the message (e.g., 50px)", "50px");
+
+            // Amending the message if a name is provided
+            var message = "JavaScript Programming is Easy";
+            if (firstName !== null && firstName !== "") {
+                message = firstName + " says: JavaScript Programming is Easy";
+            }
+
+            // Using document.write to output the styled HTML element directly to the page
+            document.write("<h1 style='color:" + msgColor + "; font-size:" + msgSize + ";'>" + message + "</h1>");
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
